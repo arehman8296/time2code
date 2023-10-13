@@ -1,0 +1,14 @@
+import time
+print("T minus")
+for i in range(12, -1 , -1):
+  time.sleep(1)
+  print(i)
+  if i == 9:
+    print("Ignition sequence start.")
+  if i == 0:
+    time.sleep(0.25)
+    print("All engines running.")
+    time.sleep(0.5)
+    print("Lift off, we have a lift off on Artemis 1.")
+    time.sleep(0.5)
+    print("Tower Clear ")
